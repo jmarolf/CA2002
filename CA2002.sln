@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31529.384
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoNotLockOnObjectsWithWeakIdentity", "CA2002\CA2002\DoNotLockOnObjectsWithWeakIdentity.csproj", "{A4DAC044-F4C0-4FEA-8501-476B1AF1F61A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA2002.Package", "CA2002\CA2002.Package\CA2002.Package.csproj", "{05535250-5DBA-408E-9E37-084A37152911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA2002.Test", "CA2002\CA2002.Test\CA2002.Test.csproj", "{02F6C914-8F7C-4890-93FA-E0507A42E08F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoNotLockOnObjectsWithWeakIdentityCSharp", "DoNotLockOnObjectsWithWeakIdentityCSharp\DoNotLockOnObjectsWithWeakIdentityCSharp.csproj", "{9C378DD4-7135-4474-A25B-D3432CC695AB}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DoNotLockOnObjectsWithWeakIdentityVisualBasic", "DoNotLockOnObjectsWithWeakIdentityVisualBasic\DoNotLockOnObjectsWithWeakIdentityVisualBasic.vbproj", "{93C567F5-58DC-4BB8-BBD2-14FFE7012366}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4DAC044-F4C0-4FEA-8501-476B1AF1F61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4DAC044-F4C0-4FEA-8501-476B1AF1F61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4DAC044-F4C0-4FEA-8501-476B1AF1F61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4DAC044-F4C0-4FEA-8501-476B1AF1F61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05535250-5DBA-408E-9E37-084A37152911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05535250-5DBA-408E-9E37-084A37152911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05535250-5DBA-408E-9E37-084A37152911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05535250-5DBA-408E-9E37-084A37152911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02F6C914-8F7C-4890-93FA-E0507A42E08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F6C914-8F7C-4890-93FA-E0507A42E08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F6C914-8F7C-4890-93FA-E0507A42E08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F6C914-8F7C-4890-93FA-E0507A42E08F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C378DD4-7135-4474-A25B-D3432CC695AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C378DD4-7135-4474-A25B-D3432CC695AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C378DD4-7135-4474-A25B-D3432CC695AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C378DD4-7135-4474-A25B-D3432CC695AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C567F5-58DC-4BB8-BBD2-14FFE7012366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C567F5-58DC-4BB8-BBD2-14FFE7012366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C567F5-58DC-4BB8-BBD2-14FFE7012366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C567F5-58DC-4BB8-BBD2-14FFE7012366}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EDDB44F-E097-47F6-8B7A-8CEFCCE482D6}
+	EndGlobalSection
+EndGlobal

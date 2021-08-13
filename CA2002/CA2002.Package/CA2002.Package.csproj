@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>CA2002</PackageId>
+    <PackageVersion>1.0.0.0</PackageVersion>
+    <Authors>marol</Authors>
+    <PackageLicenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</PackageLicenseUrl>
+    <PackageProjectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</PackageProjectUrl>
+    <PackageIconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</PackageIconUrl>
+    <RepositoryUrl>http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>CA2002</Description>
+    <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
+    <Copyright>Copyright</Copyright>
+    <PackageTags>CA2002, analyzers</PackageTags>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+
+    <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DoNotLockOnObjectsWithWeakIdentityCSharp\DoNotLockOnObjectsWithWeakIdentityCSharp.csproj" />
+    <ProjectReference Include="..\..\DoNotLockOnObjectsWithWeakIdentityVisualBasic\DoNotLockOnObjectsWithWeakIdentityVisualBasic.vbproj" />
+    <ProjectReference Include="..\CA2002\DoNotLockOnObjectsWithWeakIdentity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="tools\*.ps1" CopyToOutputDirectory="Always" Pack="true" PackagePath="" />
+    <None Update="CA2002.props" CopyToOutputDirectory="Always" Pack="true" PackagePath="build" />
+  </ItemGroup>
+
+  <Target Name="_AddAnalyzersToOutput">
+    <ItemGroup>
+		<TfmSpecificPackageFile Include="$(OutputPath)\DoNotLockOnObjectsWithWeakIdentity.dll" PackagePath="analyzers/dotnet/cs" />
+		<TfmSpecificPackageFile Include="$(OutputPath)\DoNotLockOnObjectsWithWeakIdentityCSharp.dll" PackagePath="analyzers/dotnet/cs" />
+		<TfmSpecificPackageFile Include="$(OutputPath)\DoNotLockOnObjectsWithWeakIdentity.dll" PackagePath="analyzers/dotnet/vb" />
+		<TfmSpecificPackageFile Include="$(OutputPath)\DoNotLockOnObjectsWithWeakIdentityCSharp.dll" PackagePath="analyzers/dotnet/vb" />
+    </ItemGroup>
+  </Target>
+
+</Project>
